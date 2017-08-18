@@ -51,9 +51,9 @@ def buildClassifier( img_shape=128, num_categories=5 ):
     Builds a very simple CNN outputing num_categories.
     
     Args:
-        img_shape (int): The shape of the image to feed the CNN - defaults to 128
+             img_shape (int): The shape of the image to feed the CNN - defaults to 128
         num_categories (int): The number of categories to feed the CNN
-        S
+ 
     Returns:
         keras.models.Model: a simple CNN
     
@@ -117,12 +117,12 @@ def trainModel( classifier, trainloc, testloc, img_shape, output_dir='./', batch
     
     Args:
         classifier (keras.models.Model): the model to be trained.
-        trainloc (str): the location of the training data
-        testloc (str): the location of the test data
-        img_shape (int): the shape of the image to feed the CNN
-        output_dir (str): the directory where output files are saved
-        batch_size (int): the number of samples per gradient update
-        num_epochs (int): the number of epochs to train a model
+                         trainloc (str): the location of the training data
+                          testloc (str): the location of the test data
+                        img_shape (int): the shape of the image to feed the CNN
+                       output_dir (str): the directory where output files are saved
+                       batch_size (int): the number of samples per gradient update
+                       num_epochs (int): the number of epochs to train a model
     
     Returns:
         keras.models.Model: returns the trained CNN
